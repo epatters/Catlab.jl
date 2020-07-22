@@ -21,7 +21,8 @@ using ...CategoricalAlgebra.Graphs
 using ...WiringDiagrams
 import ...WiringDiagrams.GraphMLWiringDiagrams: parse_graphml_data_value,
   parse_graphml_metagraph
-using ..WiringDiagramLayouts: LayoutOrientation, TopToBottom, is_vertical
+using ..DirectedWiringDiagramLayouts: LayoutOrientation, TopToBottom,
+  is_vertical
 
 # Data types
 ############

@@ -5,7 +5,7 @@ import JSON
 
 using Catlab.Theories, Catlab.WiringDiagrams, Catlab.Graphics
 import Catlab.Graphics: Graphviz
-using Catlab.Graphics.WiringDiagramLayouts: position, normal
+using Catlab.Graphics.DirectedWiringDiagramLayouts: position, normal
 
 # Drawing
 #########

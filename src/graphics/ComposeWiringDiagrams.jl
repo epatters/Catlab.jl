@@ -9,9 +9,10 @@ import Compose
 const C = Compose
 
 using ...WiringDiagrams
-using ..WiringDiagramLayouts
-using ..WiringDiagramLayouts: AbstractVector2D, Vector2D, BoxLayout, box_label,
-  position, size, lower_corner, upper_corner, normal, tangent, wire_points
+using ..DirectedWiringDiagramLayouts
+using ..DirectedWiringDiagramLayouts: AbstractVector2D, Vector2D, BoxLayout,
+  box_label, position, size, lower_corner, upper_corner, normal, tangent,
+  wire_points
 
 # Data types
 ############

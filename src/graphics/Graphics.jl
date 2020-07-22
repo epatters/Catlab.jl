@@ -3,7 +3,7 @@ module Graphics
 using Reexport
 using Requires
 
-include("WiringDiagramLayouts.jl")
+include("DirectedLayouts.jl")
 include("Graphviz.jl")
 include("GraphvizWiringDiagrams.jl")
 include("ComposeWiringDiagrams.jl")
@@ -11,7 +11,7 @@ include("TikZ.jl")
 include("TikZWiringDiagrams.jl")
 include("YFilesWiringDiagrams.jl")
 
-@reexport using .WiringDiagramLayouts
+@reexport using .DirectedWiringDiagramLayouts
 @reexport using .GraphvizWiringDiagrams
 @reexport using .ComposeWiringDiagrams
 @reexport using .TikZWiringDiagrams

@@ -1,10 +1,10 @@
-module TestWiringDiagramLayouts
+module TestDirectedWiringDiagramLayouts
 
 using Test
 
 using Catlab.Theories, Catlab.WiringDiagrams
 using Catlab: Graphics
-using Catlab.Graphics.WiringDiagramLayouts: LeftToRight, position
+using Catlab.Graphics.DirectedWiringDiagramLayouts: LeftToRight, position
 
 layout_diagram(f; kw...) = Graphics.layout_diagram(f; outer_ports_layout=:fixed, kw...)
 box_layouts(d::WiringDiagram) = map(box -> box.value, boxes(d))

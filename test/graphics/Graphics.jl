@@ -1,7 +1,7 @@
 using Test
 
 @testset "Layouts" begin
-  include("WiringDiagramLayouts.jl")
+  include("DirectedLayouts.jl")
 end
 
 @testset "Graphviz" begin

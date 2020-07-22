@@ -1,12 +1,17 @@
-""" Backend-agnostic layout of wiring diagrams via morphism expressions.
+""" Backend-agnostic layout of directed wiring diagrams.
 
 This module lays out wiring diagrams for visualization, independent of any
 specific graphics system. It uses the structure of a morphism expression to
 determine the layout. Thus, the first step of the algorithm is to convert the
-wiring diagram to a symbolic expression, using the submodule
-`WiringDiagrams.Expressions`. Morphism expressions may also be given directly.
+wiring diagram to a symbolic expression for a morphism in a monoidal category,
+using the submodule `WiringDiagrams.Expressions`. Morphism expressions may also
+be supplied directly.
+
+The method belongs to the class of "divide and conquer" algorithms for graph
+drawing (see Di Battista et al, 1999, *Graph drawing*, Ch. 3: Divide and
+Conquer, esp. Sec. 3.2: Series-parallel digraphs).
 """
-module WiringDiagramLayouts
+module DirectedWiringDiagramLayouts
 export LayoutOrientation, LeftToRight, RightToLeft, TopToBottom, BottomToTop,
   layout_diagram, layout_box
 

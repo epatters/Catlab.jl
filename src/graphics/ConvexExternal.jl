@@ -1,7 +1,7 @@
 # External packages.
 using .Convex, .SCS
 
-import .WiringDiagramLayouts: has_port_layout_method, solve_isotonic
+import .DirectedWiringDiagramLayouts: has_port_layout_method, solve_isotonic
 
 has_port_layout_method(::Val{:isotonic}) = true
 

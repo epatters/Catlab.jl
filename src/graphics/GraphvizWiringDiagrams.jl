@@ -13,7 +13,7 @@ using ...WiringDiagrams, ...WiringDiagrams.WiringDiagramSerialization
 import ..Graphviz
 import ..Graphviz: to_graphviz
 using ..Graphviz: parse_graphviz, run_graphviz
-using ..WiringDiagramLayouts: BoxLayout, PortLayout, WirePoint,
+using ..DirectedWiringDiagramLayouts: BoxLayout, PortLayout, WirePoint,
   LayoutOrientation, LeftToRight, RightToLeft, TopToBottom, BottomToTop,
   is_horizontal, is_vertical, box_label, wire_label, port_sign, svector
 

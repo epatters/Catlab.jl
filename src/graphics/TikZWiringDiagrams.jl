@@ -9,10 +9,10 @@ using Match
 
 using ...Syntax: GATExpr, show_latex
 using ...WiringDiagrams, ...WiringDiagrams.WiringDiagramSerialization
-using ..WiringDiagramLayouts
-using ..WiringDiagramLayouts: AbstractVector2D, Vector2D, BoxLayout, box_label,
-  wire_label, position, normal, tangent, port_sign, wire_points
-import ..WiringDiagramLayouts: svector
+using ..DirectedWiringDiagramLayouts
+using ..DirectedWiringDiagramLayouts: AbstractVector2D, Vector2D, BoxLayout,
+  box_label, wire_label, position, normal, tangent, port_sign, wire_points
+import ..DirectedWiringDiagramLayouts: svector
 import ..TikZ
 
 # Data types
