@@ -11,6 +11,10 @@ end
   include("MonoidalUndirected.jl")
 end
 
+@testset "Signatured" begin
+  include("SignaturedDirected.jl")
+end
+
 @testset "Algebras" begin
   include("Algebras.jl")
 end

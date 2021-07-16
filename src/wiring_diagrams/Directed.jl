@@ -162,6 +162,11 @@ const AbstractWiringDiagramACSet = AbstractACSetType(TheoryWiringDiagram)
   out_port_type::Attr(OutPort, PortValue)
   outer_in_port_type::Attr(OuterInPort, PortValue)
   outer_out_port_type::Attr(OuterOutPort, PortValue)
+
+  compose(src, out_port_type) == compose(tgt, in_port_type)
+  compose(in_src, outer_in_port_type) == compose(in_tgt, in_port_type)
+  compose(out_src, out_port_type) == compose(out_tgt, outer_out_port_type)
+  compose(pass_src, outer_in_port_type) == compose(pass_tgt, outer_out_port_type)
 end
 
 @present TheoryAttributedWiringDiagram <: TheoryTypedWiringDiagram begin
